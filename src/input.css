@@ -16,4 +16,9 @@
       after:duration-300
       relative after:absolute;
   }
+
+  h1 > span {
+    @apply text-yellow-500;
+  }
+
 }
