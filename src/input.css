@@ -17,8 +17,17 @@
       relative after:absolute;
   }
 
+  /* detalhe do ponto final amarelo */
   h1 > span {
     @apply text-yellow-500;
   }
 
+  /* gradientes do botão */
+  .yellow-gradient-1 {
+    @apply from-yellow-500 to-yellow-600;
+  }
+
+  .yellow-gradient-2 {
+    @apply from-yellow-500 to-yellow-700;
+  }
 }
