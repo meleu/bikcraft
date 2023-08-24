@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .font-poppins {
+    @apply font-['Poppins'];
+  }
+
   .header-menu a {
     @apply
       inline-block
