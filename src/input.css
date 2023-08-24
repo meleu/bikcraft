@@ -12,8 +12,11 @@
       inline-block
       bg-color-900 hover:bg-color-800 md:bg-inherit md:hover:bg-inherit
       rounded py-2 px-3 sm:py-3 sm:px-4 md:py-4 md:px-0
-      text-sm sm:text-lg
-      /* underline animado */
+      text-sm sm:text-lg;
+  }
+
+  .animated-underline {
+    @apply
       after:hidden md:after:block
       after:h-[2px] after:bg-color-50 after:mt-1
       after:w-0 hover:after:w-full
@@ -21,8 +24,12 @@
       relative after:absolute;
   }
 
+  .text-title-responsive {
+    @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+  }
+
   /* detalhe do ponto final */
-  h1 > span {
+  .text-title-responsive > span {
     @apply text-primary-500;
   }
 

@@ -539,7 +539,6 @@ video {
 }
 
 .header-menu a {
-  position: relative;
   display: inline-block;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
@@ -552,26 +551,9 @@ video {
   line-height: 1.25rem;
 }
 
-.header-menu a::after {
-  position: absolute;
-  margin-top: 0.25rem;
-  display: none;
-  height: 2px;
-  width: 0px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 250 249 / var(--tw-bg-opacity));
-  content: var(--tw-content);
-  transition-duration: 300ms;
-}
-
 .header-menu a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(41 37 36 / var(--tw-bg-opacity));
-}
-
-.header-menu a:hover::after {
-  content: var(--tw-content);
-  width: 100%;
 }
 
 @media (min-width: 640px) {
@@ -594,19 +576,68 @@ video {
     padding-right: 0px;
   }
 
-  .header-menu a::after {
-    content: var(--tw-content);
-    display: block;
-  }
-
   .header-menu a:hover {
     background-color: inherit;
   }
 }
 
+.animated-underline {
+  position: relative;
+}
+
+.animated-underline::after {
+  position: absolute;
+  margin-top: 0.25rem;
+  display: none;
+  height: 2px;
+  width: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 249 / var(--tw-bg-opacity));
+  content: var(--tw-content);
+  transition-duration: 300ms;
+}
+
+.animated-underline:hover::after {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .animated-underline::after {
+    content: var(--tw-content);
+    display: block;
+  }
+}
+
+.text-title-responsive {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .text-title-responsive {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-title-responsive {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .text-title-responsive {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
 /* detalhe do ponto final */
 
-h1 > span {
+.text-title-responsive > span {
   --tw-text-opacity: 1;
   color: rgb(245 158 11 / var(--tw-text-opacity));
 }
@@ -633,6 +664,10 @@ h1 > span {
   margin-bottom: 1.25rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -657,6 +692,10 @@ h1 > span {
   max-width: 80rem;
 }
 
+.max-w-6xl {
+  max-width: 72rem;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -679,6 +718,10 @@ h1 > span {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .self-end {
@@ -735,14 +778,12 @@ h1 > span {
   padding-top: 2.5rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.pt-16 {
+  padding-top: 4rem;
 }
 
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
+.pb-28 {
+  padding-bottom: 7rem;
 }
 
 .text-base {
@@ -763,6 +804,10 @@ h1 > span {
   text-transform: uppercase;
 }
 
+.lowercase {
+  text-transform: lowercase;
+}
+
 .text-color-400 {
   --tw-text-opacity: 1;
   color: rgb(168 162 158 / var(--tw-text-opacity));
@@ -776,6 +821,11 @@ h1 > span {
 .text-primary-950 {
   --tw-text-opacity: 1;
   color: rgb(69 26 3 / var(--tw-text-opacity));
+}
+
+.text-color-800 {
+  --tw-text-opacity: 1;
+  color: rgb(41 37 36 / var(--tw-text-opacity));
 }
 
 .shadow-\[inset_0_-60px_white\] {
@@ -842,11 +892,6 @@ h1 > span {
     padding-bottom: 13rem;
   }
 
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -868,17 +913,5 @@ h1 > span {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
   }
 }
