@@ -8,7 +8,7 @@ OBSERVAÇÃO: Estou usando este projeto para praticar TailwindCSS.
 
 ### Efeito de underline on hover
 
-```
+```css
 /* só funciona acima do breakpoint 'md' */
 after:hidden md:after:block
 
@@ -51,4 +51,12 @@ background do `<body>` pra poder dar a ilusão de imagem "vazando" do container.
     />
   </div>
 </main>
+```
+
+### Evitar deformação de uma imagem com h-full
+
+> `h-full` == `height: 100%`
+
+```html
+<img class="h-full object-cover" />
 ```

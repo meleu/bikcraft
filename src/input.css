@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .my-container {
+    @apply max-w-6xl mx-auto px-5;
+  }
+
   .font-poppins {
     @apply font-['Poppins'];
   }
@@ -25,7 +29,18 @@
   }
 
   .text-title-responsive {
-    @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+    @apply
+      text-4xl md:text-5xl lg:text-6xl xl:text-7xl
+      font-poppins font-semibold;
+  }
+
+  .text-subtitle-responsive {
+    @apply
+      uppercase
+      text-lg lg:text-2xl
+      tracking-wide
+      font-medium
+      text-color-500;
   }
 
   /* detalhe do ponto final */

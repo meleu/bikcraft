@@ -22,7 +22,7 @@
   <!-- header-bg -->
   <header class="bg-color-950 text-color-50">
     <!-- header -->
-    <div class="flex flex-wrap justify-between items-center gap-3 sm:gap-5 p-5 max-w-6xl mx-auto">
+    <div class="flex flex-wrap justify-between items-center gap-3 sm:gap-5 p-5 my-container">
       <a href="/">
         <img src="./img/bikcraft.svg" alt="Bikcraft">
       </a>
@@ -41,10 +41,10 @@
   <main
     class="bg-color-900 md:bg-color-950 text-color-50 shadow-[inset_0_-60px_white] md:shadow-[inset_0_-120px_white]">
     <!-- introducao -->
-    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-8 md:gap-y-0 md:gap-x-10">
+    <div class="my-container grid md:grid-cols-2 gap-8 md:gap-y-0 md:gap-x-10">
       <!-- introducao-conteudo -->
       <div class="self-end md:pb-52">
-        <h1 class="pt-10 mb-4 md:mb-8 text-title-responsive font-poppins font-semibold">
+        <h1 class="pt-10 mb-4 md:mb-8 text-title-responsive">
           Bicicletas feitas sob medida<span>.</span>
         </h1>
         <p class="mb-5 text-lg md:text-xl lg:text-2xl text-color-400">
@@ -61,7 +61,7 @@
 
   <!-- bicicletas-lista -->
   <article class="pt-16 pb-16 md:pb-28">
-    <h2 class="lowercase font-poppins font-semibold text-title-responsive px-5 max-w-6xl mx-auto mb-10">
+    <h2 class="my-container lowercase text-title-responsive mb-10">
       Escolha a sua<span>.</span>
     </h2>
 
@@ -103,6 +103,51 @@
         </a>
       </li>
     </ul>
+  </article>
+
+  <!-- tecnologia-bg -->
+  <article class="bg-color-900 text-color-500">
+    <!-- tecnologia -->
+    <div class="my-container grid grid-cols-2 gap-10">
+      <!-- tecnologia-conteudo -->
+      <div>
+        <span class="text-subtitle-responsive">
+          Tecnologia Avançada
+        </span>
+        <h2 class="text-title-responsive text-color-50">
+          você escolhe suas cores e componentes<span>.</span>
+        </h2>
+        <p class="text-2xl">
+          Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas
+          para o seu corpo e aaltura, garantindo maior conforto e ergonomia na
+          sua pedalada. Você pode também personalizar completamente as suas cores.
+        </p>
+        <a href="./bicicletas.html">Escolha um modelo</a>
+        <div>
+          <img src="./img/icones/eletrica.svg" alt="">
+          <h3 class="text-color-50 text-xl font-medium">
+            Motor Elétrico
+          </h3>
+          <p>
+            Toda Bikcraft é equipada com um motor elétrico que possui duração de
+            até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.
+          </p>
+        </div>
+        <div>
+          <img src="./img/icones/rastreador.svg" alt="">
+          <h3 class="text-color-50 text-xl font-medium">
+            Rastreador
+          </h3>
+          <p>
+            Sabemos o quão preciosa é sua Bikcraft, por isso adicionamos
+            rastreadores e sistemas anti-furto para garantir o seu sossego.
+          </p>
+        </div>
+      </div>
+
+      <!-- tecnologia-imagem -->
+      <img class="h-full object-cover object-left w-full" src="./img/fotos/tecnologia.jpg" alt="">
+    </div>
   </article>
 
   <h1 class="bg-red-600">
