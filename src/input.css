@@ -41,4 +41,23 @@
   .primary-gradient-2 {
     @apply from-primary-500 to-primary-700;
   }
+
+  /* todas imagens com border-radius */
+  img[src$='.jpg'] {
+    @apply rounded;
+  }
+
+  /* decoração da lista de bicicletas */
+  .decoration-bike-list {
+    @apply
+      before:inline-block
+      before:h-2 before:w-3
+      before:mr-2
+      before:bg-primary-500
+      before:duration-200;
+  }
+
+  .bicicleta-lista-link:hover .decoration-bike-list {
+    @apply before:w-6;
+  }
 }
