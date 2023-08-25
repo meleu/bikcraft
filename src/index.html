@@ -38,8 +38,7 @@
   </header>
 
   <!-- introducao-bg -->
-  <main
-    class="bg-color-900 md:bg-color-950 text-color-50 shadow-[inset_0_-60px_white] md:shadow-[inset_0_-120px_white]">
+  <main class="bg-color-900 md:bg-color-950 text-color-50 shadow-[inset_0_-60px] md:shadow-[inset_0_-120px]">
     <!-- introducao -->
     <div class="my-container grid md:grid-cols-2 gap-8 md:gap-y-0 md:gap-x-10">
       <!-- introducao-conteudo -->
@@ -106,47 +105,54 @@
   </article>
 
   <!-- tecnologia-bg -->
-  <article class="bg-color-900 text-color-500">
+  <article class="bg-color-900 text-color-500 md:shadow-[inset_0_80px_white,inset_0_-80px_white]">
     <!-- tecnologia -->
-    <div class="my-container grid grid-cols-2 gap-10">
+    <div class="my-container grid md:grid-cols-2 gap-10">
       <!-- tecnologia-conteudo -->
-      <div>
-        <span class="text-subtitle-responsive">
+      <div class="py-16 md:py-40">
+        <span class="text-subtitle-responsive inline-block mb-5">
           Tecnologia Avançada
         </span>
-        <h2 class="text-title-responsive text-color-50">
+        <h2 class="text-title-responsive text-color-50 mb-8">
           você escolhe suas cores e componentes<span>.</span>
         </h2>
-        <p class="text-2xl">
+        <p class="text-2xl mb-5">
           Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas
           para o seu corpo e aaltura, garantindo maior conforto e ergonomia na
           sua pedalada. Você pode também personalizar completamente as suas cores.
         </p>
-        <a href="./bicicletas.html">Escolha um modelo</a>
-        <div>
-          <img src="./img/icones/eletrica.svg" alt="">
-          <h3 class="text-color-50 text-xl font-medium">
-            Motor Elétrico
-          </h3>
-          <p>
-            Toda Bikcraft é equipada com um motor elétrico que possui duração de
-            até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.
-          </p>
-        </div>
-        <div>
-          <img src="./img/icones/rastreador.svg" alt="">
-          <h3 class="text-color-50 text-xl font-medium">
-            Rastreador
-          </h3>
-          <p>
-            Sabemos o quão preciosa é sua Bikcraft, por isso adicionamos
-            rastreadores e sistemas anti-furto para garantir o seu sossego.
-          </p>
+        <a class="mb-14 md:mb-20 inline-block text-primary-500 hover:text-primary-50 text-2xl font-poppins font-semibold uppercase after:block after:w-full after:h-1 after:bg-current"
+          href="./bicicletas.html">
+          Escolha um modelo
+        </a>
+
+        <!-- tecnologia-vantagens -->
+        <div class="flex flex-col sm:flex-row gap-10">
+          <div>
+            <img class="w-6 mb-2" src="./img/icones/eletrica.svg" alt="">
+            <h3 class="text-color-50 text-xl font-medium mb-2 w-max">
+              Motor Elétrico
+            </h3>
+            <p>
+              Toda Bikcraft é equipada com um motor elétrico que possui duração de
+              até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.
+            </p>
+          </div>
+          <div>
+            <img class="w-6 mb-2" src="./img/icones/rastreador.svg" alt="">
+            <h3 class="text-color-50 text-xl font-medium mb-2 w-max">
+              Rastreador
+            </h3>
+            <p>
+              Sabemos o quão preciosa é sua Bikcraft, por isso adicionamos
+              rastreadores e sistemas anti-furto para garantir o seu sossego.
+            </p>
+          </div>
         </div>
       </div>
 
       <!-- tecnologia-imagem -->
-      <img class="h-full object-cover object-left w-full" src="./img/fotos/tecnologia.jpg" alt="">
+      <img class="hidden md:block h-full object-cover object-left w-full" src="./img/fotos/tecnologia.jpg" alt="">
     </div>
   </article>
 
