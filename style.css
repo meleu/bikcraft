@@ -766,8 +766,8 @@ img[src$='.jpg'] {
   position: absolute;
   left: -1.25rem;
   display: inline-block;
-  height: 0.5rem;
-  width: 0.75rem;
+  height: 9px;
+  width: 13px;
   content: var(--tw-content);
   background-image: url('./img/icones/lista.svg');
 }

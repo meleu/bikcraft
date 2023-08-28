@@ -98,7 +98,7 @@
   /* decoração lista de benefícios do seguro */
   .seguros-item ul > li {
     @apply
-      before:inline-block before:w-3 before:h-2
+      before:inline-block before:w-[13px] before:h-[9px]
       before:bg-[url('./img/icones/lista.svg')]
       flex items-center
       relative before:absolute
