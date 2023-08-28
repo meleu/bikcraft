@@ -75,4 +75,18 @@
   .bicicleta-lista-link:hover .decoration-bike-list {
     @apply before:w-6;
   }
+
+  .parceiros-grid-border {
+    @apply
+    border-color-200
+      /* small screen */
+      even:border-l-2
+      [&:nth-child(n+3)]:border-t-2
+      /* above md breakpoint */
+      md:border-l-2
+      md:first:border-l-0 md:[&:nth-child(5)]:border-l-0
+      md:[&:nth-child(n+3)]:border-t-0
+      md:[&:nth-child(n+5)]:border-t-2;
+  }
+
 }
