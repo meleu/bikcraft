@@ -7,10 +7,6 @@
     @apply max-w-6xl mx-auto px-5;
   }
 
-  .font-poppins {
-    @apply font-['Poppins'];
-  }
-
   .header-menu a {
     @apply
       inline-block
@@ -28,26 +24,6 @@
       relative after:absolute;
   }
 
-  .text-title-responsive {
-    @apply
-      text-4xl md:text-5xl lg:text-6xl xl:text-7xl
-      font-poppins font-semibold;
-  }
-
-  .text-subtitle-responsive {
-    @apply
-      uppercase
-      text-lg lg:text-2xl
-      tracking-wide
-      font-medium
-      text-color-500;
-  }
-
-  /* detalhe do ponto final */
-  .text-title-responsive > span {
-    @apply text-primary-500;
-  }
-
   /* gradientes do botão */
   .primary-gradient-1 {
     @apply from-primary-500 to-primary-600;
@@ -57,7 +33,22 @@
     @apply from-primary-500 to-primary-700;
   }
 
-  /* todas imagens com border-radius */
+  .botao {
+    @apply
+      uppercase text-base md:text-lg
+      inline-block rounded
+      max-w-max
+      py-3 px-4 md:py-4 md:px-8
+      bg-gradient-to-b primary-gradient-1 hover:primary-gradient-2
+    text-primary-950 font-poppins font-semibold;
+  }
+
+  .botao.secundario {
+    @apply
+      bg-none bg-color-800 hover:bg-color-700 text-color-200;
+  }
+
+    /* todas imagens com border-radius */
   img[src$='.jpg'] {
     @apply rounded;
   }
@@ -104,4 +95,80 @@
       after:absolute;
   }
 
+  /* decoração lista de benefícios do seguro */
+  .seguros-item ul > li {
+    @apply
+      before:inline-block before:w-3 before:h-2
+      before:bg-[url('./img/icones/lista.svg')]
+      flex items-center
+      relative before:absolute
+      before:-left-5
+  }
+
+  /* tipografia */
+  .font-poppins {
+    @apply font-['Poppins'];
+  }
+
+  .font-1-xs {
+    @apply font-poppins text-sm;
+  }
+
+  .font-1-s {
+    @apply font-poppins text-base;
+  }
+
+  .font-1-m {
+    @apply font-poppins text-lg;
+  }
+
+  .font-1-l {
+    @apply font-poppins text-2xl
+  }
+
+  .font-1-xl {
+    @apply
+      font-poppins font-semibold
+      text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  .font-1-xxl {
+    @apply
+      font-poppins font-semibold
+      text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+  }
+
+  /* detalhe do ponto final */
+  .font-1-xxl > span {
+    @apply text-primary-500;
+  }
+
+  .text-subtitle-responsive {
+    @apply
+      uppercase
+      text-lg lg:text-2xl
+      tracking-wide
+      font-medium
+      text-color-500;
+  }
+
+  .font-2-xs {
+    @apply text-sm;
+  }
+
+  .font-2-s {
+    @apply text-base;
+  }
+
+  .font-2-m {
+    @apply text-xl font-medium;
+  }
+
+  .font-2-l {
+    @apply text-xl xl:text-2xl;
+  }
+
+  .font-2-xl {
+    @apply text-4xl font-medium;
+  }
 }
