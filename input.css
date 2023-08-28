@@ -89,4 +89,19 @@
       md:[&:nth-child(n+5)]:border-t-2;
   }
 
+  /* decoração do quote */
+  .decoration-quote {
+    @apply
+      /* abre aspas */
+      before:content-['“']
+      before:text-8xl
+      before:text-primary-600
+      before:absolute before:-left-14 before:-top-5
+      /* fecha aspas */
+      after:content-['”']
+      after:text-8xl
+      after:text-primary-600
+      after:absolute;
+  }
+
 }
