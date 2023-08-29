@@ -1134,6 +1134,22 @@ footer a:hover {
   grid-template-columns: 1fr auto;
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-\[auto-fit_minmax\(280px\2c _max-content\)\] {
+  grid-template-columns: auto-fit minmax(280px, max-content);
+}
+
+.grid-cols-\[auto-fit\2c _minmax\(280px\2c _max-content\)\] {
+  grid-template-columns: auto-fit minmax(280px, max-content);
+}
+
+.grid-cols-\[repeat\(auto-fit\2c _minmax\(280px\2c _max-content\)\)\] {
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1176,6 +1192,15 @@ footer a:hover {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .self-end {
@@ -1282,6 +1307,15 @@ footer a:hover {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 
 .pb-16 {
@@ -1518,6 +1552,10 @@ footer a:hover {
     margin-bottom: 2rem;
   }
 
+  .md\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1555,6 +1593,15 @@ footer a:hover {
     row-gap: 0px;
   }
 
+  .md\:gap-x-20 {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+
+  .md\:gap-y-10 {
+    row-gap: 2.5rem;
+  }
+
   .md\:bg-color-950 {
     --tw-bg-opacity: 1;
     background-color: rgb(12 10 9 / var(--tw-bg-opacity));
@@ -1576,6 +1623,11 @@ footer a:hover {
   .md\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
+  }
+
+  .md\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
   .md\:pb-20 {
