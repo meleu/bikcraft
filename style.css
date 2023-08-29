@@ -1021,6 +1021,10 @@ img[src$='.jpg'] {
   overflow-x: auto;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-none {
   border-radius: 0px;
 }
