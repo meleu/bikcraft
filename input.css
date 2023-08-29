@@ -105,6 +105,10 @@
       before:-left-5
   }
 
+  footer a {
+    @apply hover:text-color-50;
+  }
+
   /* tipografia */
   .font-poppins {
     @apply font-['Poppins'];
