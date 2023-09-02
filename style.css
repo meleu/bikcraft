@@ -571,7 +571,7 @@ video {
 .my-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 72rem;
+  max-width: 1280px;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
@@ -730,15 +730,26 @@ img[src$='.jpg'] {
   border-radius: 0.25rem;
 }
 
+/* quadradinho amarelo */
+
+.decoration-square::before {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.75rem;
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+}
+
 /* decoração da lista de bicicletas */
 
 .decoration-bike-list::before {
-  margin-right: 0.5rem;
   display: inline-block;
   height: 0.5rem;
   width: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+  margin-right: 0.5rem;
   content: var(--tw-content);
   transition-duration: 200ms;
 }
@@ -746,6 +757,21 @@ img[src$='.jpg'] {
 .bicicleta-lista-link:hover .decoration-bike-list::before {
   content: var(--tw-content);
   width: 1.5rem;
+}
+
+.decoration-faq::after {
+  display: inline-block;
+  height: 6px;
+  width: 14px;
+  background-image: url('./img/icones/seta-abrir.svg');
+  content: var(--tw-content);
+  transition-duration: 300ms;
+}
+
+.decoration-faq:hover::after {
+  content: var(--tw-content);
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .parceiros-grid-border {
@@ -1126,6 +1152,14 @@ footer a:hover {
   max-width: 75ch;
 }
 
+.max-w-\[80ch\] {
+  max-width: 80ch;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1134,16 +1168,8 @@ footer a:hover {
   grid-template-columns: 1fr auto;
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-\[auto-fit_minmax\(280px\2c _max-content\)\] {
-  grid-template-columns: auto-fit minmax(280px, max-content);
-}
-
-.grid-cols-\[auto-fit\2c _minmax\(280px\2c _max-content\)\] {
-  grid-template-columns: auto-fit minmax(280px, max-content);
+.grid-cols-\[auto_1fr_auto\] {
+  grid-template-columns: auto 1fr auto;
 }
 
 .grid-cols-\[repeat\(auto-fit\2c _minmax\(280px\2c _max-content\)\)\] {
@@ -1192,15 +1218,6 @@ footer a:hover {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-x-20 {
-  -moz-column-gap: 5rem;
-       column-gap: 5rem;
-}
-
-.gap-y-10 {
-  row-gap: 2.5rem;
 }
 
 .self-end {
@@ -1304,14 +1321,14 @@ footer a:hover {
   padding-bottom: 0.5rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-14 {
@@ -1364,6 +1381,10 @@ footer a:hover {
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -1508,6 +1529,11 @@ footer a:hover {
   background-color: currentColor;
 }
 
+.odd\:bg-color-100:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
+}
+
 .hover\:text-primary-50:hover {
   --tw-text-opacity: 1;
   color: rgb(255 251 235 / var(--tw-text-opacity));
@@ -1544,16 +1570,16 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
   .md\:mb-20 {
     margin-bottom: 5rem;
   }
 
   .md\:mb-8 {
     margin-bottom: 2rem;
-  }
-
-  .md\:mb-14 {
-    margin-bottom: 3.5rem;
   }
 
   .md\:block {
@@ -1589,13 +1615,13 @@ footer a:hover {
          column-gap: 2.5rem;
   }
 
-  .md\:gap-y-0 {
-    row-gap: 0px;
-  }
-
   .md\:gap-x-20 {
     -moz-column-gap: 5rem;
          column-gap: 5rem;
+  }
+
+  .md\:gap-y-0 {
+    row-gap: 0px;
   }
 
   .md\:gap-y-10 {
@@ -1620,14 +1646,14 @@ footer a:hover {
     padding-bottom: 3.5rem;
   }
 
-  .md\:py-40 {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  }
-
   .md\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
+  }
+
+  .md\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .md\:pb-20 {
