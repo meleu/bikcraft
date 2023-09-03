@@ -979,6 +979,11 @@ footer a:hover {
   color: rgb(120 113 108 / var(--tw-text-opacity));
 }
 
+.font-2-xs {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-2-s {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1037,6 +1042,22 @@ footer a:hover {
   grid-column: 1 / -1;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
+.row-auto {
+  grid-row: auto;
+}
+
+.row-\[2\] {
+  grid-row: 2;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -1081,6 +1102,10 @@ footer a:hover {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .block {
@@ -1140,6 +1165,14 @@ footer a:hover {
   min-width: 280px;
 }
 
+.min-w-\[100px\] {
+  min-width: 100px;
+}
+
+.min-w-\[200px\] {
+  min-width: 200px;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -1154,6 +1187,10 @@ footer a:hover {
 
 .max-w-\[80ch\] {
   max-width: 80ch;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .cursor-pointer {
@@ -1176,6 +1213,10 @@ footer a:hover {
   grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
 }
 
+.grid-cols-\[max-content_auto\] {
+  grid-template-columns: max-content auto;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1184,8 +1225,16 @@ footer a:hover {
   flex-wrap: wrap;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-between {
@@ -1220,6 +1269,15 @@ footer a:hover {
   gap: 2rem;
 }
 
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -1249,8 +1307,40 @@ footer a:hover {
   border-bottom-left-radius: 0.25rem;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-none {
   border-style: none;
+}
+
+.border-b-color-900 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(28 25 23 / var(--tw-border-opacity));
+}
+
+.border-b-color-700 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(68 64 60 / var(--tw-border-opacity));
+}
+
+.border-b-color-50 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(250 250 249 / var(--tw-border-opacity));
+}
+
+.border-b-white {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-color-900 {
@@ -1266,6 +1356,11 @@ footer a:hover {
 .bg-primary-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
 .from-white {
@@ -1296,6 +1391,10 @@ footer a:hover {
   padding: 1.25rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1321,14 +1420,19 @@ footer a:hover {
   padding-bottom: 0.5rem;
 }
 
-.py-28 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .pb-14 {
@@ -1438,6 +1542,10 @@ footer a:hover {
   font-style: italic;
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
 .text-color-400 {
   --tw-text-opacity: 1;
   color: rgb(168 162 158 / var(--tw-text-opacity));
@@ -1529,6 +1637,14 @@ footer a:hover {
   background-color: currentColor;
 }
 
+.first\:min-w-full:first-child {
+  min-width: 100%;
+}
+
+.last\:border-none:last-child {
+  border-style: none;
+}
+
 .odd\:bg-color-100:nth-child(odd) {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 244 / var(--tw-bg-opacity));
@@ -1570,6 +1686,14 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
+  .md\:row-auto {
+    grid-row: auto;
+  }
+
+  .md\:row-span-1 {
+    grid-row: span 1 / span 1;
+  }
+
   .md\:mb-14 {
     margin-bottom: 3.5rem;
   }
@@ -1604,6 +1728,10 @@ footer a:hover {
 
   .md\:grid-cols-\[3fr_5fr_4fr\] {
     grid-template-columns: 3fr 5fr 4fr;
+  }
+
+  .md\:grid-cols-\[max-content_auto\] {
+    grid-template-columns: max-content auto;
   }
 
   .md\:gap-10 {
@@ -1713,6 +1841,10 @@ footer a:hover {
 }
 
 @media (min-width: 1024px) {
+  .lg\:grid-cols-\[max-content_auto\] {
+    grid-template-columns: max-content auto;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
